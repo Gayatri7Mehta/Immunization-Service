@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Immunization Schedule</title>
+</head>
+<body>
+    <h1>Child Immunization Schedule</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Child's Name</th>
+                <th>Age (months)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for child in child_data %}
+                <tr>
+                    <td>{{ child.child_name }}</td>
+                    <td>{{ child.age }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
