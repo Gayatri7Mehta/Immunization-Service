@@ -4,17 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Child Immunization Registration</title>
+    <link rel="style.css" href="style.css">
 </head>
 <body>
-    <h1>Child Immunization Registration</h1>
+    <h1><center>Child Immunization Registration</center></h1>
     <form method="POST">
+        <fieldset>
+        <legend><em>Child's Details</em></legend><br>
         <label for="child_name">Child's Name:</label>
         <input type="text" id="child_name" name="child_name" required><br><br>
 
         <label for="age">Child's Age (months):</label>
         <input type="number" id="age" name="age" required><br><br>
 
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="birth_place">Place of birth:</label>
+        <select name="city" id="city"
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            </select>
+          <br>
+        </fieldset>
+        <br>
+
         <input type="submit" value="Register">
     </form>
+    <section>
+        <p><b>Already Registered.Click below vaccination schedule link</b></p>
+        <a href="vaacination_schedule.html"><h4>Vaccination Schedule</h4></a>
+    </section>
 </body>
 </html>
