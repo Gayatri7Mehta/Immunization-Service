@@ -1,0 +1,59 @@
+/* Reset some default browser styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the entire page */
+body {
+    background-color: #87fadd;
+    font-family: Arial, sans-serif;
+}
+
+/* Style headers (h1 and h2) */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Style paragraphs (p) */
+p {
+    color:#0f0f0f ;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Style links (a) */
+a {
+    color: #0074D9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Add this CSS rule to style the content under the <legend> element */
+legend {
+    background-color:#f7baef ;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+fieldset{
+background-color: white
+}
+
+/* Create a container with a white background and padding */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
