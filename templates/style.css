@@ -6,13 +6,16 @@ body, h1, h2, p, a {
 
 /* Apply a background color to the entire page */
 body {
-    background-color: #87fadd;
+    background-color: #87fadd; 
+    background-image: url("bgimage.jpeg");
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
 }
 
 /* Style headers (h1 and h2) */
 h1 {
     color: #333;
+    font-family: "Sofia", sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -25,7 +28,7 @@ h2 {
 
 /* Style paragraphs (p) */
 p {
-    color:#0f0f0f ;
+    color:#f2eded ;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;
@@ -33,8 +36,8 @@ p {
 
 /* Style links (a) */
 a {
-    color: #0074D9;
-    text-decoration: none;
+    color: #080808;
+    text-decoration:wavy;
 }
 
 a:hover {
@@ -47,7 +50,7 @@ legend {
     border: 1px solid #ccc;
 }
 fieldset{
-background-color: white
+background-color: rgba(133, 236, 225, 0.984)
 }
 
 /* Create a container with a white background and padding */
