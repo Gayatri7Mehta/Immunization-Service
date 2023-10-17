@@ -1,27 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Child Immunization Schedule</title>
+    <title>Vaccination Schedule</title>
 </head>
 <body>
-    <h1>Child Immunization Schedule</h1>
+    <h1>Vaccination Schedule</h1>
+
     <table border="1">
-        <thead>
-            <tr>
-                <th>Child's Name</th>
-                <th>Age (months)</th>
+        <tr>
+
+            <th>Age</th>
+            <th>Vaccine</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Birth</td>
+            <td>BCG</td>
+            <td><input type="radio" name="BCG" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>Hep B1</td>
+            <td><input type="radio" name="Hep_B1" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>OPV</td>
+            <td><input type="radio" name="OPV" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td rowspan="6">6 weeks</td>
+            <td>DTwP /DTaP1</td>
+            <td><input type="radio" name="DTaP1" value="Taken"> Taken</td>
             </tr>
-        </thead>
-        <tbody>
-            {% for child in child_data %}
-                <tr>
-                    <td>{{ child.child_name }}</td>
-                    <td>{{ child.age }}</td>
-                </tr>
-            {% endfor %}
-        </tbody>
+        <tr>
+            <td>Hib-1</td>
+            <td><input type="radio" name="Hib-1" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>IPV-1</td>
+            <td><input type="radio" name="IPV-1" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>Hep B2</td>
+            <td><input type="radio" name="Hep B2" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>PCV 1</td>
+            <td><input type="radio" name="PCV 1" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>Rota-1</td>
+            <td><input type="radio" name="Rota-1" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td rowspan="6">10 weeks</td>
+            <td>DTwP /DTaP2</td>
+            <td><input type="radio" name="DTaP2" value="Taken"> Taken</td>
+            </tr>
+        <tr>
+            <td>Hib-2</td>
+            <td><input type="radio" name="Hib-2" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>IPV-2</td>
+            <td><input type="radio" name="IPV-2" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>Hep B3</td>
+            <td><input type="radio" name="Hep B3" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>PCV 2</td>
+            <td><input type="radio" name="PCV 2" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>Rota-2</td>
+            <td><input type="radio" name="Rota-2" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td rowspan="6">14 weeks</td>
+            <td>DTwP /DTaP3</td>
+            <td><input type="radio" name="DTaP3" value="Taken"> Taken</td>
+            </tr>
+        <tr>
+            <td>Hib-3</td>
+            <td><input type="radio" name="Hib-3" value="Taken"> Taken</td>
+
+        </tr>
+        <tr>
+            <td>IPV-3</td>
+            <td><input type="radio" name="IPV-3" value="Taken"> Taken</td>
+
+        </tr>
+        <tr>
+            <td>Hep B4</td>
+            <td><input type="radio" name="Hep B4" value="Taken"> Taken</td>
+
+        </tr>
+        <tr>
+            <td>PCV 3</td>
+            <td><input type="radio" name="PCV 3" value="Taken"> Taken</td>
+
+        </tr>
+        <tr>
+            <td>Rota-3</td>
+            <td><input type="radio" name="Rota-3" value="Taken"> Taken</td>
+
+        </tr>
+        <tr>
+            <td>6 Months</td>
+            <td>Influenza-1</td>
+            <td><input type="radio" name="Influenza-1" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>7 Months</td>
+            <td>Influenza-2</td>
+            <td><input type="radio" name="Influenza-2" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>6 to 9 Months</td>
+            <td>Typhoid Conjugate Vaccine</td>
+            <td><input type="radio" name="Typhoid" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>9 Months</td>
+            <td>MMR 1 (Mumps, measles, Rubella)</td>
+            <td><input type="radio" name="MMR1" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>12 Months</td>
+            <td>Hepatitis A- 1</td>
+            <td><input type="radio" name="Hep_A1" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>12 to 15 Months</td>
+            <td>PCV Booster</td>
+            <td><input type="radio" name="PCV_Booster" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>15 Months</td>
+            <td>MMR 2</td>
+            <td><input type="radio" name="MMR2_Varicella" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>16 to 18 Months</td>
+            <td>DTwP /DTaP</td>
+            <td><input type="radio" name="DTaP_Hib_IPV" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>18 to 19 Months</td>
+            <td>Hepatitis A- 2**, Varicella 2</td>
+            <td><input type="radio" name="Hep_A2_Varicella2" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>4 to 6 years</td>
+            <td>DTwP /DTaP, IPV, MMR 3</td>
+            <td><input type="radio" name="DTaP_IPV_MMR3" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>9 to 15 years (Girls)</td>
+            <td>HPV (2 doses)</td>
+            <td><input type="radio" name="HPV" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>10 to 12 Years</td>
+            <td>Tdap/ Td</td>
+            <td><input type="radio" name="Tdap_Td" value="Taken"> Taken</td>
+        </tr>
+        <tr>
+            <td>2nd, 3rd, 4th and 5th Year</td>
+            <td>Annual Influenza Vaccine</td>
+            <td><input type="radio" name="Annual_Influenza" value="Taken"> Taken</td>
+        </tr>
+
+        <!-- Add more rows for other vaccines -->
     </table>
+
+    <button onclick="saveChanges()">Save Changes</button>
+
+    <script>
+        function saveChanges() {
+            var checkboxes = document.querySelectorAll('input[type="radio"]:checked');
+            var takenVaccines = [];
+
+            checkboxes.forEach(function (checkbox) {
+                takenVaccines.push(checkbox.name);
+            });
+
+            // Send the list of taken vaccines to the server or perform further actions
+            console.log("Taken Vaccines: " + takenVaccines.join(', '));
+        }
+    </script>
 </body>
 </html>
