@@ -1,4 +1,10 @@
 from flask import Flask, render_template
+import firebase_admin
+from firebase_admin import credentials
+
+cred = credentials.Certificate("C:\Users\Gayatri Mehta\Downloads\vaccination-key.json")
+firebase_admin.initialize_app(cred)
+
 
 app = Flask(__name__)
 
